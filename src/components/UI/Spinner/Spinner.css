@@ -1,0 +1,48 @@
+.Spinner {
+  animation: spin 1s infinite linear;
+  border: solid 2vmin transparent;
+  border-radius: 50%;
+  border-right-color: #703B09;
+  border-top-color: #703B09;
+  box-sizing: border-box;
+  height: 20vmin;
+  left: calc(50% - 10vmin);
+  position: fixed;
+  top: calc(50% - 10vmin);
+  width: 20vmin;
+  z-index: 1;
+}
+.Spinner:before {
+   animation:spin 2s infinite linear;
+   border:solid 2vmin transparent;
+   border-radius:50%;
+   border-right-color:#cf8f2e;
+   border-top-color:#cf8f2e;
+   box-sizing:border-box;
+   content:"";
+   height:16vmin;
+   left:0;
+   position:absolute;
+   top:0;
+   width:16vmin;
+}
+.Spinner:after {
+   animation:spin 3s infinite linear;
+   border:solid 2vmin transparent;
+   border-radius:50%;
+   border-right-color:#AC9980;
+   border-top-color:#AC9980;
+   box-sizing:border-box;
+   content:"";
+   height:12vmin;
+   left:2vmin;
+   position:absolute;
+   top:2vmin;
+   width:12vmin;
+}
+
+@keyframes spin {
+  100% {
+    transform:rotate(360deg);
+  }
+}
